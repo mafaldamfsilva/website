@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mafalda Silva - Portfolio</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						beige: {
+							50: '#faf8f5',
+							100: '#f5f1ea',
+							200: '#e8dfd0',
+							300: '#dccdb6',
+							400: '#cfbb9c',
+							500: '#c3a982',
+							600: '#b89768',
+							700: '#8f7350',
+							800: '#665239',
+							900: '#3d3121',
+						}
+					}
+				}
+			}
+		}
+	</script>
+</head>
+
+<body class="bg-beige-50">
+	<!-- Header -->
+	<header class="bg-white shadow-md fixed w-full top-0 z-50 transition-shadow duration-300">
+		<div class="max-w-7xl mx-auto px-6 lg:px-8">
+			<div class="flex justify-between items-center h-20">
+				<h1
+					class="text-2xl font-bold text-beige-900 cursor-pointer hover:text-amber-600 transition-colors duration-300">
+					Mafalda Silva
+				</h1>
+				<nav class="hidden md:flex items-center space-x-8">
+					<a href="#about"
+						class="text-beige-700 hover:text-beige-900 transition-colors duration-200 font-medium">About</a>
+					<a href="#experience"
+						class="text-beige-700 hover:text-beige-900 transition-colors duration-200 font-medium">Experience</a>
+					<a href="#projects"
+						class="text-beige-700 hover:text-beige-900 transition-colors duration-200 font-medium">Projects</a>
+					<a href="#education"
+						class="text-beige-700 hover:text-beige-900 transition-colors duration-200 font-medium">Education</a>
+					<a href="#skills"
+						class="text-beige-700 hover:text-beige-900 transition-colors duration-200 font-medium">Skills</a>
+					<a href="#contact"
+						class="bg-amber-600 text-white px-6 py-2.5 rounded-full hover:bg-amber-700 transition-all duration-300 hover:shadow-lg font-medium">Contact</a>
+				</nav>
+				<button id="mobile-menu-btn"
+					class="md:hidden text-beige-800 hover:text-amber-600 transition-colors duration-200">
+					<i class="fas fa-bars text-2xl"></i>
+				</button>
+			</div>
+		</div>
+		<div id="mobile-menu" class="hidden md:hidden bg-white border-t border-beige-200 px-6 py-4 space-y-3">
+			<a href="#about"
+				class="block text-beige-700 hover:text-amber-600 transition-colors duration-200 py-1">About</a>
+			<a href="#experience"
+				class="block text-beige-700 hover:text-amber-600 transition-colors duration-200 py-1">Experience</a>
+			<a href="#projects"
+				class="block text-beige-700 hover:text-amber-600 transition-colors duration-200 py-1">Projects</a>
+			<a href="#education"
+				class="block text-beige-700 hover:text-amber-600 transition-colors duration-200 py-1">Education</a>
+			<a href="#skills"
+				class="block text-beige-700 hover:text-amber-600 transition-colors duration-200 py-1">Skills</a>
+			<a href="#contact"
+				class="block text-beige-700 hover:text-amber-600 transition-colors duration-200 py-1">Contact</a>
+		</div>
+	</header>
+
+	<!-- About -->
+	<section id="about" class="pt-32 pb-20">
+		<div class="max-w-7xl mx-auto px-6 lg:px-8">
+			<div class="grid md:grid-cols-2 gap-12 items-center">
+				<div>
+					<h1 class="text-5xl font-bold text-beige-900 mb-6">Hi, I'm Mafalda Silva</h1>
+					<p class="text-beige-700 text-lg mb-4">
+						Management student at University of Minho, passionate about strategy, marketing and business
+						development.
+					</p>
+					<p class="text-beige-700 text-lg mb-6">
+						Currently working as a Digital Development Junior Consultant at YME.
+					</p>
+					<div class="flex space-x-4">
+						<a href="#contact"
+							class="inline-block bg-amber-600 text-white px-6 py-2 rounded-full hover:bg-amber-700 transition-all duration-300 hover:scale-105 hover:shadow-lg">Contact
+							Me</a>
+					</div>
+				</div>
+				<div class="flex justify-center items-center">
+					<img src="static/foto.jpg" alt="Mafalda"
+						class="w-full h-[400px] md:h-[500px] object-cover rounded-lg shadow-lg mx-auto hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Experience -->
+	<section id="experience" class="py-20 bg-white">
+		<div class="max-w-5xl mx-auto px-6">
+			<h2 class="text-3xl font-bold text-beige-900 mb-10">Experience</h2>
+			<div class="space-y-6">
+				<div
+					class="bg-beige-50 rounded-lg p-6 border border-beige-200 hover:shadow-lg hover:border-amber-300 transition-all duration-300 hover:-translate-y-1">
+					<div class="flex justify-between items-start mb-2">
+						<div>
+							<h3 class="text-xl font-bold text-beige-900">Trainee in Digital Development</h3>
+							<p class="text-amber-600 font-semibold">YME (Students' Business)</p>
+						</div>
+						<span class="text-sm text-beige-600">July 2025 - Present</span>
+					</div>
+					<p class="text-beige-700">Working on design and digital communication projects, learning Adobe
+						tools.</p>
+				</div>
+
+				<div
+					class="bg-beige-50 rounded-lg p-6 border border-beige-200 hover:shadow-lg hover:border-amber-300 transition-all duration-300 hover:-translate-y-1">
+					<div class="flex justify-between items-start mb-2">
+						<div>
+							<h3 class="text-xl font-bold text-beige-900">Workshops</h3>
+							<p class="text-amber-600 font-semibold">Excel, Teamwork, Ethics</p>
+						</div>
+						<span class="text-sm text-beige-600">2024</span>
+					</div>
+					<p class="text-beige-700">Developed collaboration and adaptability skills.</p>
+				</div>
+
+				<div
+					class="bg-beige-50 rounded-lg p-6 border border-beige-200 hover:shadow-lg hover:border-amber-300 transition-all duration-300 hover:-translate-y-1">
+					<div class="flex justify-between items-start mb-2">
+						<div>
+							<h3 class="text-xl font-bold text-beige-900">Volunteer</h3>
+							<p class="text-amber-600 font-semibold">Banco Alimentar</p>
+						</div>
+						<span class="text-sm text-beige-600">2023</span>
+					</div>
+					<p class="text-beige-700">Developed teamwork and social awareness.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projects -->
+	<section id="projects" class="py-20">
+		<div class="max-w-5xl mx-auto px-6">
+			<h2 class="text-3xl font-bold text-beige-900 mb-10">Projects</h2>
+			<div class="space-y-6">
+				<div
+					class="bg-beige-50 rounded-lg p-6 border border-beige-200 hover:shadow-lg hover:border-amber-300 transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
+					<div class="flex justify-between items-start mb-3">
+						<div>
+							<h3
+								class="text-xl font-bold text-beige-900 group-hover:text-amber-600 transition-colors duration-200">
+								Report Design</h3>
+							<p class="text-amber-600 font-semibold">YME Digital Development</p>
+						</div>
+						<img src="static/yme_logo.png" alt="YME Logo"
+							class="h-12 w-12 object-contain group-hover:scale-110 transition-transform duration-300">
+					</div>
+					<p class="text-beige-700">Designed and formatted client reports for YME, applying
+						layout and visual-identity principles to improve readability and professional impact.</p>
+				</div>
+
+				<div
+					class="bg-beige-50 rounded-lg p-6 border border-beige-200 hover:shadow-lg hover:border-amber-300 transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
+					<div class="flex justify-between items-start mb-3">
+						<div>
+							<h3
+								class="text-xl font-bold text-beige-900 group-hover:text-amber-600 transition-colors duration-200">
+								Rebranding Project</h3>
+							<p class="text-amber-600 font-semibold">Entry Challenge (YME)</p>
+						</div>
+						<img src="static/yme_logo.png" alt="YME Logo"
+							class="h-12 w-12 object-contain group-hover:scale-110 transition-transform duration-300">
+					</div>
+					<p class="text-beige-700">Created a complete rebranding concept for a fictional company, developing
+						a new visual identity and communication tone that reflected innovation and brand consistency.
+					</p>
+				</div>
+
+				<div
+					class="bg-beige-50 rounded-lg p-6 border border-beige-200 hover:shadow-lg hover:border-amber-300 transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
+					<div class="flex justify-between items-start mb-3">
+						<div>
+							<h3
+								class="text-xl font-bold text-beige-900 group-hover:text-amber-600 transition-colors duration-200">
+								Investment Portfolio Competition</h3>
+							<p class="text-amber-600 font-semibold">Montepio Trader Go</p>
+						</div>
+						<img src="static/montepio.png" alt="Montepio Logo"
+							class="h-20 w-20 object-contain group-hover:scale-110 transition-transform duration-300">
+					</div>
+					<p class="text-beige-700">Participated in a real-time investment simulation challenge, analyzing
+						market trends and building a diversified portfolio, gaining insights into finance and strategic
+						decision-making.</p>
+				</div>
+
+				<div
+					class="bg-beige-50 rounded-lg p-6 border border-beige-200 hover:shadow-lg hover:border-amber-300 transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
+					<div class="flex justify-between items-start mb-3">
+						<div>
+							<h3
+								class="text-xl font-bold text-beige-900 group-hover:text-amber-600 transition-colors duration-200">
+								Marketing Plan – Mercedes-Benz Electric
+								Vehicles</h3>
+							<p class="text-amber-600 font-semibold">Sociedade Comercial C. Santos</p>
+						</div>
+						<img src="static/mercedes_logo.png" alt="Mercedes-Benz Logo"
+							class="h-12 w-12 object-contain group-hover:scale-110 transition-transform duration-300">
+					</div>
+					<p class="text-beige-700">Created a strategic marketing plan for Mercedes-Benz electric vehicles,
+						analyzing market positioning, customer segments, and communication strategies to strengthen the
+						brand's transition to sustainable mobility.</p>
+				</div>
+
+				<div
+					class="bg-beige-50 rounded-lg p-6 border border-beige-200 hover:shadow-lg hover:border-amber-300 transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
+					<div class="flex justify-between items-start mb-3">
+						<div>
+							<h3
+								class="text-xl font-bold text-beige-900 group-hover:text-amber-600 transition-colors duration-200">
+								Marketing Strategy</h3>
+							<p class="text-amber-600 font-semibold">Namorarte (Local Shoe Brand)</p>
+						</div>
+						<img src="static/namorarte.png" alt="Namorarte Logo"
+							class="h-16 w-16 object-contain group-hover:scale-110 transition-transform duration-300">
+					</div>
+					<p class="text-beige-700">Collaborated with a small footwear brand from Vila Verde to design new
+						social-media content, propose publishing strategies, and develop product and promotion ideas
+						aligned with brand identity.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Education -->
+	<section id="education" class="py-20">
+		<div class="max-w-5xl mx-auto px-6">
+			<h2 class="text-3xl font-bold text-beige-900 mb-10">Education</h2>
+			<div class="space-y-6">
+				<div
+					class="bg-white rounded-lg p-6 shadow border border-beige-200 hover:shadow-xl hover:border-amber-300 transition-all duration-300 hover:-translate-y-1">
+					<div class="flex justify-between items-start mb-2">
+						<div>
+							<h3 class="text-xl font-bold text-beige-900">Bachelor's in Management</h3>
+							<p class="text-amber-600 font-semibold">University of Minho</p>
+						</div>
+						<span class="text-sm text-beige-600">Sept 2023 - Present</span>
+					</div>
+					<p class="text-beige-700">Currently in 3rd year.</p>
+				</div>
+
+				<div
+					class="bg-amber-50 rounded-lg p-6 border-2 border-amber-300 hover:shadow-xl hover:border-amber-400 transition-all duration-300 hover:-translate-y-1">
+					<h3 class="text-xl font-bold text-beige-900 mb-2"><i
+							class="fas fa-star text-amber-600 mr-2 inline-block hover:rotate-12 transition-transform duration-300"></i>Future
+						Goal</h3>
+					<p class="text-amber-600 font-semibold mb-1">University of Minho</p>
+					<p class="text-beige-700">Master's in Strategy & Marketing or Business & Management</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Skills -->
+	<section id="skills" class="py-20 bg-white">
+		<div class="max-w-5xl mx-auto px-6">
+			<h2 class="text-3xl font-bold text-beige-900 mb-10">Skills</h2>
+			<div class="grid md:grid-cols-2 gap-6">
+				<div
+					class="bg-beige-50 rounded-lg p-6 border border-beige-200 hover:shadow-lg hover:border-amber-300 transition-all duration-300 hover:-translate-y-1 group">
+					<h3 class="text-lg font-bold text-beige-900 mb-3"><i
+							class="fas fa-laptop mr-2 text-amber-600 group-hover:scale-110 inline-block transition-transform duration-300"></i>Digital
+						Tools</h3>
+					<div class="text-beige-700 space-y-1">
+						<p>• Office Suite</p>
+						<p>• Canva</p>
+						<p>• Adobe Illustrator, InDesign, Photoshop</p>
+						<p>• Learning Figma</p>
+					</div>
+				</div>
+
+				<div
+					class="bg-beige-50 rounded-lg p-6 border border-beige-200 hover:shadow-lg hover:border-amber-300 transition-all duration-300 hover:-translate-y-1 group">
+					<h3 class="text-lg font-bold text-beige-900 mb-3"><i
+							class="fas fa-globe mr-2 text-amber-600 group-hover:scale-110 inline-block transition-transform duration-300"></i>Languages
+					</h3>
+					<div class="text-beige-700 space-y-1">
+						<p>• English B2 (Certified)</p>
+						<p>• English C1+ (In Progress)</p>
+					</div>
+				</div>
+
+				<div
+					class="bg-beige-50 rounded-lg p-6 border border-beige-200 hover:shadow-lg hover:border-amber-300 transition-all duration-300 hover:-translate-y-1 group">
+					<h3 class="text-lg font-bold text-beige-900 mb-3"><i
+							class="fas fa-users mr-2 text-amber-600 group-hover:scale-110 inline-block transition-transform duration-300"></i>Soft
+						Skills</h3>
+					<div class="text-beige-700 space-y-1">
+						<p>• Teamwork</p>
+						<p>• Attention to Detail</p>
+						<p>• Adaptability</p>
+						<p>• Strategic Thinking</p>
+					</div>
+				</div>
+
+				<div
+					class="bg-beige-50 rounded-lg p-6 border border-beige-200 hover:shadow-lg hover:border-amber-300 transition-all duration-300 hover:-translate-y-1 group">
+					<h3 class="text-lg font-bold text-beige-900 mb-3"><i
+							class="fas fa-heart mr-2 text-amber-600 group-hover:scale-110 inline-block transition-transform duration-300"></i>Personal
+					</h3>
+					<div class="text-beige-700 space-y-1">
+						<p>• Creativity</p>
+						<p>• Curiosity</p>
+						<p>• Responsibility</p>
+						<p>• Empathy</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<section id="contact" class="py-20">
+		<div class="max-w-5xl mx-auto px-6">
+			<h2 class="text-3xl font-bold text-beige-900 mb-10">Contact</h2>
+			<div class="grid md:grid-cols-2 gap-6">
+				<div class="space-y-4">
+					<div
+						class="bg-beige-50 rounded-lg p-6 flex items-center space-x-4 hover:shadow-lg hover:border hover:border-amber-300 transition-all duration-300 group">
+						<i
+							class="fas fa-phone text-amber-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+						<div>
+							<p class="text-sm text-beige-600">Phone</p>
+							<p class="text-beige-900 font-semibold">+351 963 443 089</p>
+						</div>
+					</div>
+					<div
+						class="bg-beige-50 rounded-lg p-6 flex items-center space-x-4 hover:shadow-lg hover:border hover:border-amber-300 transition-all duration-300 group">
+						<i
+							class="fas fa-envelope text-amber-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+						<div>
+							<p class="text-sm text-beige-600">Email</p>
+							<p class="text-beige-900 font-semibold">mafaldamiguelsilva@gmail.com</p>
+						</div>
+					</div>
+					<div
+						class="bg-beige-50 rounded-lg p-6 flex items-center space-x-4 hover:shadow-lg hover:border hover:border-amber-300 transition-all duration-300 group">
+						<i
+							class="fas fa-map-marker-alt text-amber-600 text-2xl group-hover:scale-110 transition-transform duration-300"></i>
+						<div>
+							<p class="text-sm text-beige-600">Location</p>
+							<p class="text-beige-900 font-semibold">Braga, Portugal</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-amber-50 rounded-lg p-6">
+					<h3 class="text-lg font-bold text-beige-900 mb-4">Connect</h3>
+					<div class="space-y-3">
+						<a href="https://www.linkedin.com/in/mafalda-miguel-silva/" target="_blank"
+							rel="noopener noreferrer"
+							class="flex items-center space-x-3 p-3 bg-white rounded-lg hover:shadow-lg transition-all duration-300 hover:-translate-x-1 group">
+							<i
+								class="fab fa-linkedin text-blue-600 text-xl group-hover:scale-125 transition-transform duration-300"></i>
+							<span
+								class="text-beige-900 group-hover:text-blue-600 transition-colors duration-200">LinkedIn</span>
+						</a>
+
+						<a href="https://www.instagram.com/_mafalda.silva/" target="_blank" rel="noopener noreferrer"
+							class="flex items-center space-x-3 p-3 bg-white rounded-lg hover:shadow-lg transition-all duration-300 hover:-translate-x-1 group">
+							<i
+								class="fab fa-instagram text-pink-500 text-xl group-hover:scale-125 transition-transform duration-300"></i>
+							<span
+								class="text-beige-900 group-hover:text-pink-500 transition-colors duration-200">Instagram</span>
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="bg-beige-900 text-white py-6">
+		<div class="max-w-7xl mx-auto px-6 text-center">
+			<p>&copy; 2025 Mafalda. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
